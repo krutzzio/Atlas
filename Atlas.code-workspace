@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Atlas",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "E:/Descargas/atlas/httpdocs/img"
+		},
+		{
+			"name": "PHPMailer",
+			"path": "E:/Descargas/atlas/httpdocs/PHPMailer"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Atlas"
+	}
+}
