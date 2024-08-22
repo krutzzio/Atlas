@@ -329,6 +329,7 @@
 
       .title-with-popup {
         margin: auto;
+        gap: 0;
       }
 
       .title-with-popup h2 {
@@ -352,6 +353,33 @@
 
       .buttons button img {
         width: 75px !important;
+      }
+
+      .popup-content {
+        width: 250px;
+        padding: 20px 60px;
+      }
+
+      .popup-content .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0 15px 0;
+      }
+
+      .popup-content a {
+        width: fit-content;
+      }
+
+      .info-popup {
+        left: -55px;
+        top: -25px;
+      }
+
+      .close {
+        top: -32px;
+        right: -50px;
       }
     }
   </style>
