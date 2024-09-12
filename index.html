@@ -300,13 +300,13 @@
 
       .container {
         overflow: hidden;
-        height: 100lvh;
+        height: 100dvh;
       }
 
       .footer {
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        bottom: 0;
+        margin-bottom: 10px;
       }
 
       .logo {
@@ -328,13 +328,17 @@
         font-size: x-large;
       }
 
-      .tab-content {
+      .tab-content.active {
         max-width: 100vw;
+        min-height: 100dvh;
+
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       .title-with-popup {
-        margin: auto;
         gap: 0;
       }
 
@@ -345,7 +349,7 @@
 
       .buttons {
         max-width: 95vw;
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         gap: 16px;
@@ -449,22 +453,25 @@
     <form id="myForm" enctype="multipart/form-data">
 
       <div id="tab1" class="tab-content active">
-        <div class="title-with-popup">
-          <h2>¿Para qué tipo de consumo va a solicitar la oferta?</h2>
-        </div>
-        <div class="buttons">
-          <button type="button" onclick="setValorAndNextTab('opcion1', 'tab2')">
-            <img src="img/icon-1.png" style="width:100px;margin-bottom:8px;">
-            <span style="color:#c21366;font-weight:bold;">HOGAR</span>
-          </button>
-          <button type="button" onclick="setValorAndNextTab('opcion2', 'tab2')">
-            <img src="img/icon-2.png" style="width:100px;margin-bottom:8px;">
-            <span style="color:#c21366;font-weight:bold;">EMPRESA</span>
-          </button>
-          <button type="button" onclick="setValorAndNextTab('opcion3', 'tab2')">
-            <img src="img/icon-3.png" style="width:100px;margin-bottom:8px;">
-            <span style="color:#c21366;font-weight:bold;">INDUSTRIA</span>
-          </button>
+        <div></div>
+        <div>
+          <div class="title-with-popup">
+            <h2>¿Para qué tipo de consumo va a solicitar la oferta?</h2>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="setValorAndNextTab('opcion1', 'tab2')">
+              <img src="img/icon-1.png" style="width:100px;margin-bottom:8px;">
+              <span style="color:#c21366;font-weight:bold;">HOGAR</span>
+            </button>
+            <button type="button" onclick="setValorAndNextTab('opcion2', 'tab2')">
+              <img src="img/icon-2.png" style="width:100px;margin-bottom:8px;">
+              <span style="color:#c21366;font-weight:bold;">EMPRESA</span>
+            </button>
+            <button type="button" onclick="setValorAndNextTab('opcion3', 'tab2')">
+              <img src="img/icon-3.png" style="width:100px;margin-bottom:8px;">
+              <span style="color:#c21366;font-weight:bold;">INDUSTRIA</span>
+            </button>
+          </div>
         </div>
         <div class="footer">
           <span>Paso 1 de 4</span>
